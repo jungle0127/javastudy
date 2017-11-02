@@ -40,6 +40,13 @@ thread interruption rule: 线程中断规则
 finalizer rule: 对象终结规则
 transitivity: 传递性
 
+## synchronized 关键字
+
+无论synchronized关键字加在非静态方法还是对象上，则它取得的锁是对象；
+synchronized关键字作用的对象是一个静态方法或一个类，则其取得的锁是类，该类所有对象共享同一把锁
+每个对象只有一个锁(lock)与之相关联，谁拿到这个锁谁就可以运行它所控制的那段代码
+实现同步需要很大的系统开销，甚至可以造成死锁，故尽量避免无谓的同步控制。
+
 #Java线程调度
 
 系统为线程分配处理器使用权的过程。
