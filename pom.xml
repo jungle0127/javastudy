@@ -15,5 +15,6 @@
     <module>designpattern</module>
     <module>multithreads</module>
     <module>security</module>
+    <module>Rest</module>
   </modules>
 </project>

@@ -63,7 +63,7 @@ public class AES {
 			SecretKey secretKey = keyGenerator.generateKey();
 			byte[] keyBytes = secretKey.getEncoded();
 			
-			Key key = 
+//			Key key = 
 			
 			Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
 			cipher.init(Cipher.ENCRYPT_MODE, key);
