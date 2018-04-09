@@ -1,0 +1,3 @@
+server:
+  context-path: /rest
+  port: 8081 
