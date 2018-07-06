@@ -12,3 +12,6 @@ SHA-2: SHA-256,SHA-224,SHA-384,SHA-512
 
 SHA-1&MD5被山大教授破解
 ## MAC - Message Authentication Code -- HMAC - Hash-based Message Authentication Code 
+
+## 更换provider为BC
+修改配置文件$JAVA_HOME\jre\lib\security\java.security，加入一行配置：security.provider.按顺序填数字=org.bouncycastle.jce.provider.BouncyCastleProvider
