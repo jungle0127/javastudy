@@ -63,3 +63,7 @@ Java为抢占式
 3. 相对线程安全 -- 线程安全类
 4. 线程兼容-- 普通Java类
 5. 线程对立-- 无论如何同步都无法同步
+
+#JDK AQS框架
+https://blog.csdn.net/vernonzheng/article/details/8275624
+http://ifeve.com/java-special-troops-aqs/
