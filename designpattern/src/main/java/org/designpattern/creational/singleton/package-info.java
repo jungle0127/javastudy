@@ -5,4 +5,4 @@
  * @author Administrator
  *
  */
-package org.designpattern.proxy;
+package org.designpattern.creational.singleton;

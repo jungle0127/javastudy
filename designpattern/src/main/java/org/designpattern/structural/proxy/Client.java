@@ -1,4 +1,4 @@
-package org.designpattern.proxy;
+package org.designpattern.structural.proxy;
 
 import java.lang.reflect.Proxy;
 

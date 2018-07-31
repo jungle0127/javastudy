@@ -1,4 +1,4 @@
-package org.designpattern.proxy.cglibproxy;
+package org.designpattern.structural.proxy.cglibproxy;
 
 import java.lang.reflect.Method;
 

@@ -5,4 +5,4 @@
  * @author Administrator
  *
  */
-package org.designpattern.proxy.cglibproxy;
+package org.designpattern.behavioral.interpreter;

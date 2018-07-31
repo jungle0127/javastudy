@@ -1,4 +1,4 @@
-package org.designpattern.proxy;
+package org.designpattern.structural.proxy;
 
 public interface ISubject {
 	void doWork();

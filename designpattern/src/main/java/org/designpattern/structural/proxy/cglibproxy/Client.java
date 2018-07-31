@@ -1,7 +1,7 @@
-package org.designpattern.proxy.cglibproxy;
+package org.designpattern.structural.proxy.cglibproxy;
 
-import org.designpattern.proxy.ISubject;
-import org.designpattern.proxy.RealSubject;
+import org.designpattern.structural.proxy.ISubject;
+import org.designpattern.structural.proxy.RealSubject;
 
 import net.sf.cglib.proxy.Enhancer;
 

@@ -5,4 +5,4 @@
  * @author Administrator
  *
  */
-package org.designpattern.builder;
+package org.designpattern.behavioral.mediator;

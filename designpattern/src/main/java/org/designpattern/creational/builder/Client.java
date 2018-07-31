@@ -1,4 +1,4 @@
-package org.designpattern.builder;
+package org.designpattern.creational.builder;
 
 public class Client {
 

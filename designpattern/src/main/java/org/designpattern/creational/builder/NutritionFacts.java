@@ -1,4 +1,4 @@
-package org.designpattern.builder;
+package org.designpattern.creational.builder;
 /**
  * Builder pattern demo from <Effective Java> Item 2
  * @author PS. Zhang
