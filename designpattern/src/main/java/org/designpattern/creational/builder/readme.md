@@ -1,5 +1,7 @@
 # builder pattern
- ## This is a demo from Effective Java version 2
+Constructs complex objects by separating construction and representation.
+ 
+## This is a demo from Effective Java version 2
  
  Advantages of builder pattern:
  
