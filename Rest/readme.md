@@ -8,3 +8,8 @@ https://segmentfault.com/a/1190000012342007
 >
 http://blog.mozhu.org/categories/zipkin/
 >
+
+# JWT与Session
+https://www.jianshu.com/p/af8360b83a9f
+# cookie, session,token
+https://my.oschina.net/u/3908739/blog/1941216/
