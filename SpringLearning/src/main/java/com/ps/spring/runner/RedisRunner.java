@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class RedisRunner implements CommandLineRunner {
 	@Autowired
-	private RedisTemplate redisTemplate;
+	private RedisTemplate<String, String> redisTemplate;
 
 	@Override
 	public void run(String... args) throws Exception {
