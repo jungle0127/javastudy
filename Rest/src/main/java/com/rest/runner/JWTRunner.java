@@ -23,7 +23,7 @@ public class JWTRunner implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 //		String base64Secret = "MDk4ZjZiY2Q0NjIxZDM3M2NhZGU0ZTgzMjYyN2I0ZjY=";
 //		byte[] apiKeySecretBytes = DatatypeConverter.parseBase64Binary(base64Secret);
-		byte[] apiKeySecretBytes = "welcometounitedstatesofamericaandhaveagoodday|welcometopeoplesrepublicofchinaandhaveagoodday".getBytes();
+		byte[] apiKeySecretBytes = "eyJoZWFkIjoidmFsdWUiLCJhbGciOiJIUzUxMiJ9eyJzdWIiOiJ1c2VybmFtZSIsImNsYWltIjoidmFsdWUiLCJleHAiOjE1MzYyMjIzNjNaWX2R708eqeMW1O5H0TrNyEDnqqqNaIhhIEJt6FDil7oUd6PLTwoi5OxuN32ms3".getBytes();
 		Key signingKey = new SecretKeySpec(apiKeySecretBytes, SignatureAlgorithm.HS512.getJcaName());
 		String token = Jwts.builder().setSubject("username")
 				.setHeaderParam("head", "value")
