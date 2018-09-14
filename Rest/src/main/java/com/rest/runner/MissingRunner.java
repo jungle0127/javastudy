@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import com.rest.autowiredmap.MapManager;
 import com.rest.conditionmissingbean.IInfoService;
 import com.rest.conditionmissionclass.INameService;
 @Component
@@ -12,10 +13,13 @@ public class MissingRunner implements CommandLineRunner {
 	private INameService nameService;
 	@Autowired
 	private IInfoService infoService;
+	@Autowired
+	private MapManager mapManager;
 	@Override
 	public void run(String... args) throws Exception {
 		System.out.println(this.nameService.getName());
 		System.out.println(this.infoService.getName());
+		this.mapManager.config();
 	}
 
 }

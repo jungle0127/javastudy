@@ -1,9 +1,12 @@
-package com.rest.autowiredlist;
+package com.rest.autowiredlist.impl;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import com.rest.autowiredlist.SomethingProvider;
+import com.rest.autowiredlist.SomthingManager;
 
 @Component
 public class ConcreteManager implements SomthingManager {

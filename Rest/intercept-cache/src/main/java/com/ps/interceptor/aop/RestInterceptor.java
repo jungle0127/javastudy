@@ -11,7 +11,6 @@ import org.springframework.web.servlet.HandlerInterceptor;
 
 @Component
 public class RestInterceptor implements HandlerInterceptor {
-	
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 		String requestUri = request.getRequestURI();
 //		requestUri = request.getRequestURL().toString();

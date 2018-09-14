@@ -1,6 +1,8 @@
-package com.rest.autowiredlist;
+package com.rest.autowiredlist.impl;
 
 import org.springframework.stereotype.Component;
+
+import com.rest.autowiredlist.SomethingProvider;
 
 @Component
 public class ConcreteProvider implements SomethingProvider {
