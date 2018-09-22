@@ -12,3 +12,7 @@ http://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf
 
 Jetbrain IDEA activator:
 http://blog.csdn.net/nishiwodebocai21/article/details/71359619?fps=1&locationNum=10
+
+Java教程清单：
+https://docs.google.com/document/d/1SuxiccAQ2bA2r7WQK7FWH18MZWgVwsui2zBYLI2I9Zc/edit#
+https://docs.google.com/document/u/1/d/1UAx8wxU5D-STGP72mnfAYnWG0dmLiRcH4kpMxeYr2nU/pub

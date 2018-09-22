@@ -1,0 +1,1 @@
+https://memorynotfound.com/spring-boot-ehcache-2-caching-example-configuration/
