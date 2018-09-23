@@ -1,9 +1,0 @@
-server:
-  port: 8080
-  servlet:
-    context-path: /demo1
-
-spring:
-  cache:
-    ehcache:
-      config: classpath:/ehcache.xml
