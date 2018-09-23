@@ -6,11 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cache3-2" />
         <module name="cache32" />
+        <module name="demo1" />
         <module name="ehcache2" />
         <module name="ehcache3" />
         <module name="simplecache" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cache32" target="1.8" />
+      <module name="ehcache2" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

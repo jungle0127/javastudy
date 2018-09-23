@@ -1,7 +1,5 @@
 package com.ps.ehcache.service;
 
-import com.ps.ehcache.model.Users;
-import com.ps.ehcache.repository.UsersRespository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,21 +7,21 @@ import javax.annotation.PostConstruct;
 import java.util.LinkedList;
 import java.util.List;
 
-@Service
+//@Service
 public class LoaderService {
-    @Autowired
-    private UsersRespository usersRespository;
+//    @Autowired
+//    private UsersRespository usersRespository;
 
     @PostConstruct
     public void load(){
-        List<Users> usersList = getList();
-        usersRespository.saveAll(usersList);
+//        List<Users> usersList = getList();
+//        usersRespository.saveAll(usersList);
     }
 
-    private List<Users> getList() {
-        List<Users> usersList = new LinkedList<>();
-        usersList.add(new Users("ps","arbor",1L));
-        usersList.add(new Users("lotus","arbor",2L));
-        return usersList;
-    }
+//    private List<Users> getList() {
+//        List<Users> usersList = new LinkedList<>();
+//        usersList.add(new Users("ps","arbor",1L));
+//        usersList.add(new Users("lotus","arbor",2L));
+//        return usersList;
+//    }
 }
