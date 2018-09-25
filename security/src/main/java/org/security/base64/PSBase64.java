@@ -19,9 +19,26 @@ import sun.misc.BASE64Encoder;
 public class PSBase64 {
 	private static String plainText = "ps base64 text";
 	public static void main(String[] args) throws IOException {
-		jdkBase64();
-		commonsCodesBase64();
-		bouncyCastleBase64();
+//		jdkBase64();
+//		commonsCodesBase64();
+//		bouncyCastleBase64();
+		jdkBase64Decode();
+	}
+	public static void jdkBase64Decode() throws IOException {
+		String cipherText = "CnkKJDBlYTY2ODdiLWY3M2MtNDg5Ni04ODJjLWY5OGYxOTcxNmIxZBABGBQgASiAuLuw4iwww5rD\r\n" + 
+				"pt8sOhdDTj1kcnMsT1U9ZHJwLE89d2VzdG9uZUIkYjUwNzA3NzItMmFhMi00MTk0LTk0OTEtYWZl\r\n" + 
+				"ZTQ4OTM3ZTNiEkDqk7vJwKAXxyIQqxRwMDav9aWTgpimiv7L6FKP2CzerRZburhbrpY60vxPrSbL\r\n" + 
+				"omUVuTMwsPUapFey41mrVdidGq0DMIIBqTCCAUygAwIBAgIeAV2B0eh/AAA3TTBn/Tw7/Af9hfVB\r\n" + 
+				"jvM/hLUjOP09MAwGCCqBHM9VAYN1BQAwWzELMAkGA1UEAwwCQ0ExCzAJBgNVBAsMAkNBMQ4wDAYD\r\n" + 
+				"VQQKDAVEZWJ1ZzEQMA4GA1UEBwwHQ2hlbmdkdTEQMA4GA1UECAwHU2lDaHVhbjELMAkGA1UEBhMC\r\n" + 
+				"Q04wHhcNMTcwNzI3MDIxMzIzWhcNMzcwNzI3MDIxMzIzWjAuMQwwCgYDVQQDDANkcnMxDDAKBgNV\r\n" + 
+				"BAsMA2RycDEQMA4GA1UECgwHd2VzdG9uZTBZMBMGByqGSM49AgEGCCqBHM9VAYItA0IABChI1tNh\r\n" + 
+				"8+t0KuZiTqh5ft59AMyQXiCMa3ZihptuKvD6g8VgeWVtBvxBcy/Q5oo3ZV9XWuUd+WJ1wGOE5GOy\r\n" + 
+				"yG+jDzANMAsGA1UdDwQEAwIDyDAMBggqgRzPVQGDdQUAA0kAMEYCIQCtaDX5u4ZE7mIdSu2pOkym\r\n" + 
+				"5Z85Aj5VTFBSwYDn2bZcwwIhAJy9ogloumojgFWqxbCDyZ47L9fhmH0eb0D8BKa49JyB";
+		BASE64Decoder decoder = new BASE64Decoder();
+		byte[] src = decoder.decodeBuffer(cipherText);
+		System.out.println(src != null);
 	}
 	/**
 	 * JDK
