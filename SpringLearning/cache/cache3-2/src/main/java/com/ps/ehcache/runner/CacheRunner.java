@@ -12,13 +12,13 @@ public class CacheRunner implements CommandLineRunner {
     private PersonService personService;
     @Override
     public void run(String... args) throws Exception {
-        Person person = personService.getPerson(123456789);
+        Person person = personService.getPerson(123);
         System.out.println(person.toString());
         System.out.println("Called again");
-        personService.getPerson(123456789);
+        personService.getPerson(123);
         System.out.println(person.toString());
         System.out.println("==========================================");
-        System.out.println(personService.getPerson(987654321));
-        System.out.println(personService.getPerson(326));
+        System.out.println(personService.getPerson(456));
+        System.out.println(personService.getPerson(456));
     }
 }

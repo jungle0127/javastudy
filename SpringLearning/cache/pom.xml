@@ -12,6 +12,7 @@
       <module>demo1</module>
       <module>ehcache3</module>
       <module>cache3-2</module>
+      <module>cache3-3</module>
   </modules>
   <packaging>pom</packaging>
   <name>cache</name>
