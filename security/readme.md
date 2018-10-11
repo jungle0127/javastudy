@@ -15,3 +15,26 @@ JCA和JCE是Java平台提供的用于安全和加密服务的两组API，它们�
  
  # License 实现机制介绍PPT
  https://wenku.baidu.com/view/137a0a5628ea81c759f57887.html
+ 
+## JAAS 体系结构包括以下package: 
+> https://www.aliyun.com/jiaocheng/344430.html
+javax.security.auth 
+javax.security.auth.callback 
+javax.security.suth.login 
+javax.security.spi 
+
+## Java加解密：
+java.security（源码可见）
+javax.crypto（源码不可见）
+两个包包含了Java 加解密的核心部分
+
+## 密钥
+java.security.interfaces
+javax.crypto.interfaces
+两个包包含了密钥相关的接口
+
+## 规范
+
+java.security.spec
+javax.crypto.spec
+两个包包含了密钥规范及算法参数规范的类和接口
