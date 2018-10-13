@@ -17,5 +17,6 @@
     <module>security</module>
     <module>Rest</module>
     <module>Asyn</module>
+    <module>annotation-demo</module>
   </modules>
 </project>
