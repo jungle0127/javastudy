@@ -29,8 +29,8 @@ public class CountryRespository {
         pojo.setAlias(code);
         System.out.println("---------updated-----------------");
     }
-    @CacheEvict(allEntries = true)
-    public void evict(){
+    @CacheEvict(key = "#p0")
+    public void evict(String code){
         System.out.println("===========evicted===================");
     }
 

@@ -15,8 +15,12 @@ public class CacheRunner implements CommandLineRunner{
     @Override
     public void run(String... args) throws Exception {
         Country country = countryRespository.findByCode("CD");
-        System.out.println(country.toString());
+        System.out.println(country.getCode() + "==" + country.getAlias());
         country = countryRespository.findByCode("CD");
-        System.out.println(country.toString());
+        System.out.println(country.getCode() + "==" + country.getAlias());
+        countryRespository.remove("UPDATEDCD");
+        country = countryRespository.findByCode("CD");
+        System.out.println(country.getCode() + "==" + country.getAlias());
+
     }
 }

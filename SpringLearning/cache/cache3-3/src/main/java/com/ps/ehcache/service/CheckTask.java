@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-@Component
+//@Component
 public class CheckTask {
     private List<String> SAMPLE_COUNTRY_CODES = Arrays.asList("AF", "AX",
             "AL", "DZ", "AS", "AD", "AO", "AI", "AQ", "AG", "AR", "AM", "AW", "AU", "AT",
