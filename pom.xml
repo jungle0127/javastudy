@@ -18,5 +18,6 @@
     <module>Rest</module>
     <module>Asyn</module>
     <module>annotation-demo</module>
+    <module>annotation-api</module>
   </modules>
 </project>
