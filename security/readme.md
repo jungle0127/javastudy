@@ -38,3 +38,6 @@ javax.crypto.interfaces
 java.security.spec
 javax.crypto.spec
 两个包包含了密钥规范及算法参数规范的类和接口
+
+Java Security系统博客：
+https://blog.csdn.net/AllenWells/article/details/46517859
