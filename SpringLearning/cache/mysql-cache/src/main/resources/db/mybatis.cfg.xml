@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd"> 
+<configuration>
+	<mappers>
+		<mapper resource="com/ps/ehcache/dao/mapper/BookMapper.xml"/>
+		<mapper resource="com/ps/ehcache/dao/mapper/CheckTypeMapper.xml" />
+		<mapper resource="com/ps/ehcache/dao/mapper/ConstructTypeMapper.xml" />
+		<mapper resource="com/ps/ehcache/dao/mapper/CourseMapper.xml" />
+		<mapper resource="com/ps/ehcache/dao/mapper/DifficultyTypeMapper.xml" />
+		<mapper resource="com/ps/ehcache/dao/mapper/ExamTypeMapper.xml" />
+		<mapper resource="com/ps/ehcache/dao/mapper/KnowledgeInfoMapper.xml" />
+		<mapper resource="com/ps/ehcache/dao/mapper/KnowledgeLevelMapper.xml" />
+		<mapper resource="com/ps/ehcache/dao/mapper/KnowledgeMapper.xml" />
+		<mapper resource="com/ps/ehcache/dao/mapper/KnowledgeModuleMapper.xml" />
+		<mapper resource="com/ps/ehcache/dao/mapper/ProvinceMapper.xml" />
+		<mapper resource="com/ps/ehcache/dao/mapper/QuestionHasCheckTypeMapper.xml" />
+		<mapper resource="com/ps/ehcache/dao/mapper/QuestionHasImageMapper.xml" />
+		<mapper resource="com/ps/ehcache/dao/mapper/QuestionHasKnowledgeMapper.xml" />
+		<mapper resource="com/ps/ehcache/dao/mapper/QuestionImageMapper.xml" />
+		<mapper resource="com/ps/ehcache/dao/mapper/QuestionMapper.xml" />
+		<mapper resource="com/ps/ehcache/dao/mapper/QuestionMetadataMapper.xml" />
+		<mapper resource="com/ps/ehcache/dao/mapper/QuestionSelectionMapper.xml" />
+		<mapper resource="com/ps/ehcache/dao/mapper/QuestionTypeMapper.xml" />
+		<mapper resource="com/ps/ehcache/dao/mapper/RightsMapper.xml" />
+		<mapper resource="com/ps/ehcache/dao/mapper/ScoreMapper.xml" />
+		<mapper resource="com/ps/ehcache/dao/mapper/SubquestionMapper.xml" />
+		<mapper resource="com/ps/ehcache/dao/mapper/UserRoleMapper.xml" />
+		<mapper resource="com/ps/ehcache/dao/mapper/UsersMapper.xml"/>
+		<mapper resource="com/ps/ehcache/dao/mapper/VQuestionBasicInfoMapper.xml" />
+		<mapper resource="com/ps/ehcache/dao/mapper/VQuestionFullInfoMapper.xml" />
+		<mapper resource="com/ps/ehcache/dao/mapper/VQuestionKnowledgeInfoMapper.xml" />
+		<mapper resource="com/ps/ehcache/dao/mapper/YearMapper.xml" />
+	</mappers>
+</configuration>

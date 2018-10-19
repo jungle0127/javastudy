@@ -19,9 +19,9 @@ import sun.misc.BASE64Encoder;
 public class PSBase64 {
 	private static String plainText = "ps base64 text";
 	public static void main(String[] args) throws IOException {
-//		jdkBase64();
-//		commonsCodesBase64();
-//		bouncyCastleBase64();
+		jdkBase64();
+		commonsCodesBase64();
+		bouncyCastleBase64();
 		jdkBase64Decode();
 	}
 	public static void jdkBase64Decode() throws IOException {
@@ -51,6 +51,9 @@ public class PSBase64 {
 		
 		BASE64Decoder decoder = new BASE64Decoder();
 		System.out.println(new String(decoder.decodeBuffer(cipherText)));
+		System.out.println("==============");
+		System.out.println(new String(decoder.decodeBuffer("c2FhOnNlY3JldA==")));
+		System.out.println("==============");
 	}
 	/**
 	 * Commons codec

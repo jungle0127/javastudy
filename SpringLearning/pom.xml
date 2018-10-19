@@ -10,24 +10,19 @@
 	<name>SpringLearning</name>
 	<url>http://maven.apache.org</url>
 	<packaging>pom</packaging>
+
+    <parent>
+        <groupId>com.javastudy</groupId>
+        <artifactId>javastudy</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<swagger.version>2.8.0</swagger.version>
 	</properties>
 	<dependencies>
 		
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-redis</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-cache</artifactId>
-		</dependency>
         <!-- UT -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -90,24 +85,6 @@
             <artifactId>commons-beanutils</artifactId>
         </dependency>
     </dependencies>
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>io.spring.platform</groupId>
-                <artifactId>platform-bom</artifactId>
-                <version>Cairo-SR3</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.0.4.RELEASE</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <build>
         <plugins>
@@ -166,4 +143,11 @@
             </plugin>
         </plugins>
     </build>
+
+    <modules>
+        <module>autoconfigdemo</module>
+        <module>cache</module>
+        <module>spel</module>
+        <module>springehcache</module>
+    </modules>
 </project>
