@@ -41,3 +41,6 @@ javax.crypto.spec
 
 Java Security系统博客：
 https://blog.csdn.net/AllenWells/article/details/46517859
+
+## Hash security level
+https://blog.csdn.net/qq_28289405/article/details/80318469
