@@ -20,5 +20,6 @@
     </properties>
     <modules>
         <module>tx-jpa</module>
+        <module>tx-jms</module>
     </modules>
 </project>
