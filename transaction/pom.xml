@@ -21,5 +21,6 @@
     <modules>
         <module>tx-jpa</module>
         <module>tx-jms</module>
+        <module>tx-jta</module>
     </modules>
 </project>
