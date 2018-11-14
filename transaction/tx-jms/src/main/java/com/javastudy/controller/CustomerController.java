@@ -21,6 +21,14 @@ public class CustomerController {
     public void handle(@RequestParam String msg){
         this.customerService.handleMsg(msg);
     }
+    @PostMapping("/message/code/listen")
+    public void createMsgCode(@RequestParam String msg){
+        this.jmsTemplate.convertAndSend("customer:msgcode:new",msg);
+    }
+    @PostMapping("/message/code/direct")
+    public void handleCode(@RequestParam String msg){
+        this.customerService.handleInCode(msg);
+    }
     @GetMapping("/message")
     public String getMessage(){
         Object obj = this.jmsTemplate.receiveAndConvert("customer:msg:reply");
