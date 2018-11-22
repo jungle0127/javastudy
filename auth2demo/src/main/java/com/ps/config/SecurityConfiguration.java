@@ -26,12 +26,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     public PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
     }
-//    @Autowired
-//    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-//        //设置UserDetailsService以及密码规则
-//        auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
-//    }
-    //排除/hello路径拦截
     @Override
     public void configure(WebSecurity web) throws Exception {
         web.ignoring().antMatchers("/hello");
@@ -43,12 +37,12 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         return super.authenticationManagerBean();
     }
     //开启全局方法拦截
-    @EnableGlobalMethodSecurity(prePostEnabled = true, jsr250Enabled = true)
-    public static class GlobalSecurityConfiguration extends GlobalMethodSecurityConfiguration {
-        @Override
-        protected MethodSecurityExpressionHandler createExpressionHandler() {
-            return new OAuth2MethodSecurityExpressionHandler();
-        }
-
-    }
+//    @EnableGlobalMethodSecurity(prePostEnabled = true, jsr250Enabled = true)
+//    public static class GlobalSecurityConfiguration extends GlobalMethodSecurityConfiguration {
+//        @Override
+//        protected MethodSecurityExpressionHandler createExpressionHandler() {
+//            return new OAuth2MethodSecurityExpressionHandler();
+//        }
+//
+//    }
 }

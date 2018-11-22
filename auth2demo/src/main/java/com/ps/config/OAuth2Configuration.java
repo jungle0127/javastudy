@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
@@ -27,6 +28,8 @@ public class OAuth2Configuration {
         private AuthenticationManager authenticationManager;
         @Autowired
         private UserDetailsService userDetailsService;
+        @Autowired
+        private PasswordEncoder passwordEncoder;
         @Bean
         public TokenStore tokenStore(){
             return new InMemoryTokenStore();
@@ -42,9 +45,10 @@ public class OAuth2Configuration {
 
         @Override
         public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
+            String clientSecret = this.passwordEncoder.encode("secret");
             clients.inMemory()
                     .withClient("ncee")
-                    .secret("secret")
+                    .secret(clientSecret)
                     .accessTokenValiditySeconds(3600)
                     .refreshTokenValiditySeconds(5284000)
                     .scopes("read","write","all")
