@@ -23,7 +23,6 @@
       <module>java8function</module>
       <module>SpringAOP</module>
       <module>SpringLearning</module>
-      <module>transaction</module>
   </modules>
 
     <dependencyManagement>

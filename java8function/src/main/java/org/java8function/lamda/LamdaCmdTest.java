@@ -5,7 +5,7 @@ import java.util.function.BinaryOperator;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class LamdaCmdTest implements CommandLineRunner{
 
 	public void run(String... args) throws Exception {
