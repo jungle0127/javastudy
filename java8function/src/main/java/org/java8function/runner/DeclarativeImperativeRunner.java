@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 
-@Component
+//@Component
 @Order(1)
 public class DeclarativeImperativeRunner implements CommandLineRunner {
     @Override
