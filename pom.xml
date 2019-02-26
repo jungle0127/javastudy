@@ -17,7 +17,6 @@
     <module>multithreads</module>
     <module>security</module>
     <module>Rest</module>
-    <module>Asyn</module>
     <module>annotation-demo</module>
     <module>annotation-api</module>
       <module>java8function</module>

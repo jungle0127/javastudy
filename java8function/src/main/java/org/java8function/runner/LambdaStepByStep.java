@@ -1,13 +1,10 @@
 package org.java8function.runner;
 
-import com.sun.xml.internal.ws.policy.spi.PolicyAssertionValidator;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
-import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 import java.util.function.Consumer;
-import java.util.function.IntConsumer;
 
 //@Component
 @Order(2)
